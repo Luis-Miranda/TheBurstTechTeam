@@ -1,6 +1,6 @@
-/* :root{
+ :root{
     --smaller: .75;
-} */
+}
 
 * {
     box-sizing: border-box;
@@ -17,6 +17,8 @@ body{
     align-items: center;
     background-color: black;
     display: flex;
+    font-family: 'Poppins',
+    sans-serif; /* Se actualiza la fuente */
 }
 
 .container{
@@ -28,7 +30,7 @@ body{
 h1{ 
     /* Propiedades del Titulo del Contador */
     font-weight: normal;
-    font-size: 2.375rem; /* Se utiliza rem para la función de Herencia */
+    font-size: 2.5rem; /* Se utiliza rem para la función de Herencia */
     letter-spacing: .125rem;
     text-transform: uppercase;
 }
