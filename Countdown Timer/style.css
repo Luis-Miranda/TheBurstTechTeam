@@ -1,0 +1,63 @@
+/* :root{
+    --smaller: .75;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    align-items: center;
+    background-color: black;
+    display: flex;
+}
+
+.container{
+    color: #ff3eb5;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{ 
+    /* Propiedades del Titulo del Contador */
+    font-weight: normal;
+    font-size: 2.375rem; /* Se utiliza rem para la función de Herencia */
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+li{
+    /* Propiedades de la descripción del Tiempo del Contador */
+    display: inline-block;
+    font-size: 1.5em; /* Se utiliza em, para que el tamaño sea variable en propiedad a la pantalla */
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span{
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px){
+    /* Se utilizan media query, para que nuestro timer sea responsivo*/
+    h1{
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li{
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span{
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
